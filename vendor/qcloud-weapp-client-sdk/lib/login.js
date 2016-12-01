@@ -122,6 +122,8 @@ var login = function login(options) {
 
             // 响应错误
             fail: function (loginResponseError) {
+                console.log(loginResponseError);
+
                 var error = new LoginError(constants.ERR_LOGIN_FAILED, '登录失败，可能是网络错误或者服务器发生异常');
                 options.fail(error);
             },

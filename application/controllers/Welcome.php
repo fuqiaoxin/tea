@@ -20,6 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+//		$this->load->view('welcome_message');
+
+
+        echo json_encode(['test1'=>'123','test2'=>'456']);
 	}
 }
